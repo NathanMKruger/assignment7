@@ -39,6 +39,20 @@ namespace csi281 {
     class Queue : public SequentialCollection<T> {
     public:
         // YOUR CODE HERE
+        //using member functions from the reference for <list>
+        //cplusplus.com/reference/list/list
+        push(item)
+        {
+            backingStore.push_back(item); //puts new item at the end of the list
+        }
+        pop()
+        {
+            backingStore.pop_front(); //deletes 1st item in list. Goes along with FIFO model
+        }
+        peek()
+        {
+            backingStore.begin(); //returns the iterator at the beginning
+        }
     protected:
         using SequentialCollection<T>::backingStore;
     };
