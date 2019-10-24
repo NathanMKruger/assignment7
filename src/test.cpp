@@ -111,19 +111,19 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
 		s1.push(20);
 	    
 	    	//Test for peek() and print results
-		cout << "Current first element: " << s1.peek() << endl; //get first element with peek and print
+		cout << "Current first element: " << s1.peek() << endl; //get last element with peek and print
 		cout << "The stack has: " << s1.getCount() << " items in it." << endl;
 
-	    	//Test for pop() and print first element with peek
+	    	//Test for pop() and print last element with peek
 		cout << "Deleting the last element in the stack!" << endl;
 		s1.pop(); //delete last element. LIFO
-		cout << "Current first element: " << s1.peek() << endl; //get first element with peek and print
+		cout << "Current last element: " << s1.peek() << endl; //get last element with peek and print
 		cout << "The stack has: " << s1.getCount() << " items in it." << endl;
 
 	    	//Test remove to remove all 20s and print first element with peek()
 		cout << "Deleting all 20s from the stack!" << endl;
 		s1.remove(20); //remove all 20s
-		cout << "Current first element: " << s1.peek() << endl; //Get first element with peek and print
+		cout << "Current last element: " << s1.peek() << endl; //Get last element with peek and print
 		cout << "The stack has: " << s1.getCount() << " items in it." << endl << endl;
     }
     
@@ -141,19 +141,19 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
 		s2.push("Hello");
 	    
 	    	//Test for peek() and print results
-		cout << "Current first element: " << s2.peek() << endl; //get first element with peek and print
+		cout << "Current last element: " << s2.peek() << endl; //get last element with peek and print
 		cout << "The stack has: " << s2.getCount() << " items in it." << endl;
 
-	    	//Test for pop() and print first element with peek
+	    	//Test for pop() and print last element with peek
 		cout << "Deleting the last element in the stack!" << endl;
 		s2.pop(); //delete last element. LIFO
-		cout << "Current first element: " << s2.peek() << endl; //get first element with peek and print
+		cout << "Current last element: " << s2.peek() << endl; //get first element with peek and print
 		cout << "The stack has: " << s2.getCount() << " items in it." << endl;
 
-	    	//Test remove to remove all 'Hello's and print first element with peek()
+	    	//Test remove to remove all 'Hello's and print last element with peek()
 		cout << "Deleting all 'Hello's from the stack!" << endl;
 		s2.remove("Hello");
-		cout << "Current first element: " << s2.peek() << endl; //get first element with peek and print
+		cout << "Current last element: " << s2.peek() << endl; //get last element with peek and print
 		cout << "The stack has: " << s2.getCount() << " items in it." << endl << endl;
     }
 }
