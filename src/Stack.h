@@ -49,11 +49,11 @@ namespace csi281 {
         T pop()
         {
             backingStore.pop_back(); //deletes last item in list. Goes along with FILO model
-			return backingStore.front();
+			return backingStore.back(); //returns new end of list
 		}
         T &peek()
         {
-            return backingStore.front(); //returns the iterator at the beginning
+            return backingStore.back(); //returns the iterator at the end
         }
 
     protected:
