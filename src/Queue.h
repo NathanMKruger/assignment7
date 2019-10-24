@@ -1,3 +1,4 @@
+//  Joseph Castaner, Nathan Kruger
 //
 //  Queue.h
 //
@@ -41,17 +42,18 @@ namespace csi281 {
         // YOUR CODE HERE
         //using member functions from the reference for <list>
         //cplusplus.com/reference/list/list
-        push(item)
+        void push(const T &item)
         {
             backingStore.push_back(item); //puts new item at the end of the list
         }
-        pop()
+        T pop()
         {
-            backingStore.pop_front(); //deletes 1st item in list. Goes along with FIFO model
+			backingStore.pop_front(); //deletes 1st item in list. Goes along with FIFO model
+			return backingStore.front();
         }
-        peek()
+        T &peek()
         {
-            backingStore.begin(); //returns the iterator at the beginning
+            return backingStore.front(); //returns the iterator at the beginning
         }
     protected:
         using SequentialCollection<T>::backingStore;

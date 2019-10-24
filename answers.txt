@@ -1,14 +1,16 @@
-Nathan Kruger
-Joseph Castaner
+Nathan Kruger, Joseph Castaner
 
-1. -Restaurant kitchen orders
-   -Checkout line at a grocery store
-   -Waitlist for an online video game
+1. Real World Queues:
+    -Restaurant kitchen orders
+    -Checkout line at a grocery store
+    -Waitlist for an online video game
 
-2. -Stack of papers to grade
-   -Loading stacked plates on a counter into a dishwasher
-   -A one car wide driveway
+2. Real World Stacks: 
+    -Stack of papers to grade
+    -Loading stacked plates on a counter into a dishwasher
+    -A one car wide driveway
 
-3.
+3. A piece of software passing all it's unit tests may seem like it is working correctly on the surface,
+but the reality is that 
 
-4.
+4. Linked Lists are better for implementing stacks and queues than fixed-size arrays because with

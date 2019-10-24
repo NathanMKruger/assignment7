@@ -1,3 +1,4 @@
+//  Joseph Castaner, Nathan Kruger
 //
 //  test.cpp
 //
@@ -40,6 +41,24 @@ TEST_CASE( "Queue Tests", "[queue]" ) {
         // work properly in concert with getCount()
         // and remove()
         // YOUR CODE HERE
+
+		q1.push(20);
+		q1.push(20);
+		q1.push(30);
+		q1.push(40);
+		q1.push(20);
+		cout << "Current first element: " << q1.peek() << endl;
+		cout << "The queue has: " << q1.getCount() << " items in it." << endl;
+
+		cout << "Deleting the first element in the queue!" << endl;
+		q1.pop();
+		cout << "Current first element: " << q1.peek() << endl;
+		cout << "The queue has: " << q1.getCount() << " items in it." << endl;
+
+		cout << "Deleting all 20s from the queue!" << endl;
+		q1.remove(20);
+		cout << "Current first element: " << q1.peek() << endl;
+		cout << "The queue has: " << q1.getCount() << " items in it." << endl;
     }
     
     SECTION( "Queue w/ string tests" ) {
@@ -48,6 +67,24 @@ TEST_CASE( "Queue Tests", "[queue]" ) {
         // work properly in concert with getCount()
         // and remove()
         // YOUR CODE HERE
+
+		q2.push("Hello");
+		q2.push("Hello");
+		q2.push("Hi");
+		q2.push("Goodbye");
+		q2.push("Hello");
+		cout << "Current first element: " << q2.peek() << endl;
+		cout << "The queue has: " << q2.getCount() << " items in it." << endl;
+
+		cout << "Deleting the first element in the queue!" << endl;
+		q2.pop();
+		cout << "Current first element: " << q2.peek() << endl;
+		cout << "The queue has: " << q2.getCount() << " items in it." << endl;
+
+		cout << "Deleting all 'Hello's from the queue!" << endl;
+		q2.remove("Hello");
+		cout << "Current first element: " << q2.peek() << endl;
+		cout << "The queue has: " << q2.getCount() << " items in it." << endl;
     }
 }
 
@@ -58,6 +95,24 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
         // work properly in concert with getCount()
         // and remove()
         // YOUR CODE HERE
+
+		s1.push(20);
+		s1.push(20);
+		s1.push(30);
+		s1.push(40);
+		s1.push(20);
+		cout << "Current first element: " << s1.peek() << endl;
+		cout << "The stack has: " << s1.getCount() << " items in it." << endl;
+
+		cout << "Deleting the first element in the stack!" << endl;
+		s1.pop();
+		cout << "Current first element: " << s1.peek() << endl;
+		cout << "The stack has: " << s1.getCount() << " items in it." << endl;
+
+		cout << "Deleting all 20s from the stack!" << endl;
+		s1.remove(20);
+		cout << "Current first element: " << s1.peek() << endl;
+		cout << "The stack has: " << s1.getCount() << " items in it." << endl;
     }
     
     SECTION( "Stack w/ string tests" ) {
@@ -66,6 +121,24 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
         // work properly in concert with getCount()
         // and remove()
         // YOUR CODE HERE
+
+		s2.push("Hello");
+		s2.push("Hello");
+		s2.push("Hi");
+		s2.push("Goodbye");
+		s2.push("Hello");
+		cout << "Current first element: " << s2.peek() << endl;
+		cout << "The stack has: " << s2.getCount() << " items in it." << endl;
+
+		cout << "Deleting the first element in the stack!" << endl;
+		s2.pop();
+		cout << "Current first element: " << s2.peek() << endl;
+		cout << "The stack has: " << s2.getCount() << " items in it." << endl;
+
+		cout << "Deleting all 'Hello's from the stack!" << endl;
+		s2.remove("Hello");
+		cout << "Current first element: " << s2.peek() << endl;
+		cout << "The stack has: " << s2.getCount() << " items in it." << endl;
     }
 }
 

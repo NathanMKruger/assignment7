@@ -1,4 +1,4 @@
-//  Nathan Kruger
+//  Nathan Kruger, Joseph Castaner
 //
 //  Stack.h
 //
@@ -42,18 +42,20 @@ namespace csi281 {
         // YOUR CODE HERE
         //using memeber functions from the reference for <list>
         //cplusplus.com/reference/list/list
-        push(item)
+        void push(const T &item)
         {
             backingStore.push_back(item); //puts new item at the end of the list
         }
-        pop()
+        T pop()
         {
             backingStore.pop_back(); //deletes last item in list. Goes along with FILO model
-        }
-        peek()
+			return backingStore.front();
+		}
+        T &peek()
         {
-            backingStore.begin(); //returns the iterator at the beginning
+            return backingStore.front(); //returns the iterator at the beginning
         }
+
     protected:
         using SequentialCollection<T>::backingStore;
     };
