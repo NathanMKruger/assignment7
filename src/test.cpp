@@ -58,7 +58,7 @@ TEST_CASE( "Queue Tests", "[queue]" ) {
 		cout << "Deleting all 20s from the queue!" << endl;
 		q1.remove(20);
 		cout << "Current first element: " << q1.peek() << endl;
-		cout << "The queue has: " << q1.getCount() << " items in it." << endl;
+		cout << "The queue has: " << q1.getCount() << " items in it." << endl << endl;
     }
     
     SECTION( "Queue w/ string tests" ) {
@@ -84,7 +84,7 @@ TEST_CASE( "Queue Tests", "[queue]" ) {
 		cout << "Deleting all 'Hello's from the queue!" << endl;
 		q2.remove("Hello");
 		cout << "Current first element: " << q2.peek() << endl;
-		cout << "The queue has: " << q2.getCount() << " items in it." << endl;
+		cout << "The queue has: " << q2.getCount() << " items in it." << endl << endl;
     }
 }
 
@@ -112,7 +112,7 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
 		cout << "Deleting all 20s from the stack!" << endl;
 		s1.remove(20);
 		cout << "Current first element: " << s1.peek() << endl;
-		cout << "The stack has: " << s1.getCount() << " items in it." << endl;
+		cout << "The stack has: " << s1.getCount() << " items in it." << endl << endl;
     }
     
     SECTION( "Stack w/ string tests" ) {
@@ -138,7 +138,7 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
 		cout << "Deleting all 'Hello's from the stack!" << endl;
 		s2.remove("Hello");
 		cout << "Current first element: " << s2.peek() << endl;
-		cout << "The stack has: " << s2.getCount() << " items in it." << endl;
+		cout << "The stack has: " << s2.getCount() << " items in it." << endl << endl;
     }
 }
 
