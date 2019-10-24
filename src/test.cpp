@@ -41,23 +41,27 @@ TEST_CASE( "Queue Tests", "[queue]" ) {
         // work properly in concert with getCount()
         // and remove()
         // YOUR CODE HERE
-
+		//add int items to list
 		q1.push(20);
 		q1.push(20);
 		q1.push(30);
 		q1.push(40);
 		q1.push(20);
-		cout << "Current first element: " << q1.peek() << endl;
+	    
+	    	//Test for peek() and print results
+		cout << "Current first element: " << q1.peek() << endl; //get first element with peek and print
 		cout << "The queue has: " << q1.getCount() << " items in it." << endl;
 
+	    	//Test for pop() and print first element with peek
 		cout << "Deleting the first element in the queue!" << endl;
-		q1.pop();
-		cout << "Current first element: " << q1.peek() << endl;
+		q1.pop(); //delete first element. FIFO
+		cout << "Current first element: " << q1.peek() << endl; //get first element with peek and print
 		cout << "The queue has: " << q1.getCount() << " items in it." << endl;
 
+	    	//Test remove to remove all 20s and print first element with peek()
 		cout << "Deleting all 20s from the queue!" << endl;
-		q1.remove(20);
-		cout << "Current first element: " << q1.peek() << endl;
+		q1.remove(20); //remove all 20s
+		cout << "Current first element: " << q1.peek() << endl; //get first element with peek and print
 		cout << "The queue has: " << q1.getCount() << " items in it." << endl << endl;
     }
     
@@ -67,23 +71,27 @@ TEST_CASE( "Queue Tests", "[queue]" ) {
         // work properly in concert with getCount()
         // and remove()
         // YOUR CODE HERE
-
+		//add string items to list
 		q2.push("Hello");
 		q2.push("Hello");
 		q2.push("Hi");
 		q2.push("Goodbye");
 		q2.push("Hello");
-		cout << "Current first element: " << q2.peek() << endl;
+	    
+	    	//Test for peek() and print results
+		cout << "Current first element: " << q2.peek() << endl; //get first element with peek and print
 		cout << "The queue has: " << q2.getCount() << " items in it." << endl;
 
+	    	//Test for pop() and print first element with peek
 		cout << "Deleting the first element in the queue!" << endl;
-		q2.pop();
-		cout << "Current first element: " << q2.peek() << endl;
+		q2.pop(); //delete first element. FIFO
+		cout << "Current first element: " << q2.peek() << endl; //get first element with peek and print
 		cout << "The queue has: " << q2.getCount() << " items in it." << endl;
 
+	    	//Test remove to remove all 'Hello's and print first element with peek()
 		cout << "Deleting all 'Hello's from the queue!" << endl;
-		q2.remove("Hello");
-		cout << "Current first element: " << q2.peek() << endl;
+		q2.remove("Hello"); //remove all 'Hello's
+		cout << "Current first element: " << q2.peek() << endl; //get first element with peek and print
 		cout << "The queue has: " << q2.getCount() << " items in it." << endl << endl;
     }
 }
@@ -95,23 +103,27 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
         // work properly in concert with getCount()
         // and remove()
         // YOUR CODE HERE
-
+		//add int items to list
 		s1.push(20);
 		s1.push(20);
 		s1.push(30);
 		s1.push(40);
 		s1.push(20);
-		cout << "Current first element: " << s1.peek() << endl;
+	    
+	    	//Test for peek() and print results
+		cout << "Current first element: " << s1.peek() << endl; //get first element with peek and print
 		cout << "The stack has: " << s1.getCount() << " items in it." << endl;
 
-		cout << "Deleting the first element in the stack!" << endl;
-		s1.pop();
-		cout << "Current first element: " << s1.peek() << endl;
+	    	//Test for pop() and print first element with peek
+		cout << "Deleting the last element in the stack!" << endl;
+		s1.pop(); //delete last element. LIFO
+		cout << "Current first element: " << s1.peek() << endl; //get first element with peek and print
 		cout << "The stack has: " << s1.getCount() << " items in it." << endl;
 
+	    	//Test remove to remove all 20s and print first element with peek()
 		cout << "Deleting all 20s from the stack!" << endl;
-		s1.remove(20);
-		cout << "Current first element: " << s1.peek() << endl;
+		s1.remove(20); //remove all 20s
+		cout << "Current first element: " << s1.peek() << endl; //Get first element with peek and print
 		cout << "The stack has: " << s1.getCount() << " items in it." << endl << endl;
     }
     
@@ -121,23 +133,27 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
         // work properly in concert with getCount()
         // and remove()
         // YOUR CODE HERE
-
+		//add string items to list
 		s2.push("Hello");
 		s2.push("Hello");
 		s2.push("Hi");
 		s2.push("Goodbye");
 		s2.push("Hello");
-		cout << "Current first element: " << s2.peek() << endl;
+	    
+	    	//Test for peek() and print results
+		cout << "Current first element: " << s2.peek() << endl; //get first element with peek and print
 		cout << "The stack has: " << s2.getCount() << " items in it." << endl;
 
-		cout << "Deleting the first element in the stack!" << endl;
-		s2.pop();
-		cout << "Current first element: " << s2.peek() << endl;
+	    	//Test for pop() and print first element with peek
+		cout << "Deleting the last element in the stack!" << endl;
+		s2.pop(); //delete last element. LIFO
+		cout << "Current first element: " << s2.peek() << endl; //get first element with peek and print
 		cout << "The stack has: " << s2.getCount() << " items in it." << endl;
 
+	    	//Test remove to remove all 'Hello's and print first element with peek()
 		cout << "Deleting all 'Hello's from the stack!" << endl;
 		s2.remove("Hello");
-		cout << "Current first element: " << s2.peek() << endl;
+		cout << "Current first element: " << s2.peek() << endl; //get first element with peek and print
 		cout << "The stack has: " << s2.getCount() << " items in it." << endl << endl;
     }
 }
