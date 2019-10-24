@@ -43,8 +43,8 @@ TEST_CASE( "Queue Tests", "[queue]" ) {
         // YOUR CODE HERE
 		//add int items to list
 		q1.push(20);
-		q1.push(20);
 		q1.push(30);
+		q1.push(20);
 		q1.push(40);
 		q1.push(20);
 	    
@@ -73,8 +73,8 @@ TEST_CASE( "Queue Tests", "[queue]" ) {
         // YOUR CODE HERE
 		//add string items to list
 		q2.push("Hello");
-		q2.push("Hello");
 		q2.push("Hi");
+		q2.push("Hello");
 		q2.push("Goodbye");
 		q2.push("Hello");
 	    
@@ -105,8 +105,8 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
         // YOUR CODE HERE
 		//add int items to list
 		s1.push(20);
-		s1.push(20);
 		s1.push(30);
+		s1.push(20);
 		s1.push(40);
 		s1.push(20);
 	    
@@ -135,8 +135,8 @@ TEST_CASE( "Stack Tests", "[stack]" ) {
         // YOUR CODE HERE
 		//add string items to list
 		s2.push("Hello");
-		s2.push("Hello");
 		s2.push("Hi");
+		s2.push("Hello");
 		s2.push("Goodbye");
 		s2.push("Hello");
 	    
