@@ -53,7 +53,7 @@ namespace csi281 {
         }
         T &peek()
         {
-            return backingStore.front(); //returns the iterator at the beginning
+            return backingStore.front(); //returns the value at the beginning
         }
     protected:
         using SequentialCollection<T>::backingStore;

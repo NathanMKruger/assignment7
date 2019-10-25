@@ -53,7 +53,7 @@ namespace csi281 {
 		}
         T &peek()
         {
-            return backingStore.back(); //returns the iterator at the end
+            return backingStore.back(); //returns the value at the end
         }
 
     protected:
