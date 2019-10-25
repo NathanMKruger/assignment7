@@ -10,7 +10,6 @@ Nathan Kruger, Joseph Castaner
     -Loading stacked plates on a counter into a dishwasher
     -A one car wide driveway
 
-3. A piece of software passing all it's unit tests may seem like it is working correctly on the surface,
-but the reality is that 
+3. A piece of software passing all it's unit tests may seem like it is working correctly on the surface, but the reality is that there could be errors in the code that make it so the tests do run through successfully, but are given incorrect data such as being given the beginning of a stack when the intentions were to use the end of the stack. This won't cause a test to fail, but it will give the users the wrong information in relation to the initial purpose of the test.
 
-4. Linked Lists are better for implementing stacks and queues than fixed-size arrays because with
+4. Linked Lists are better for implementing stacks and queues than fixed-size arrays because stacks and queues can have items added and taken away from them and linked lists can do that and a fixed-size array cannot unless it is a dynamic array instead.
